@@ -1,0 +1,9 @@
+
+
+
+擷取"http://e-service.cwb.gov.tw/HistoryDataQuery/index.jsp"監測網站之台中大雅測站,各月之溫度與風速資料
+
+
+		
+
+	

@@ -1,0 +1,5 @@
+[matchmax c1 ] = spline_piece(maxima(1,:),maxima(2,:),x);
+[matchmin c2 ] = spline_piece(minimum(1,:),minimum(2,:),x);
+
+
+          

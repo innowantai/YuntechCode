@@ -1,0 +1,12 @@
+function [fn xi modeshape] = D_IDmode(A,C,dt)
+[phi lam] = eig(A);
+a = real(diag(lam));
+b = imag(diag(lam));
+ai = (1/(2*dt)) * log(a.^2 + b.^2);
+bi = (1/dt) * atan2(b,a);
+Wn = (sqrt(ai.^2 + bi.^2)).';
+Xi = (-ai)'./ Wn;
+xi = Xi(1:2:end).*100; 
+fn = Wn(1:2:end) ./ (2*pi);
+PHI = C * phi;
+modeshape = PHI(:,1:2:end);
